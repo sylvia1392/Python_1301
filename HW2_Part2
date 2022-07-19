@@ -1,0 +1,47 @@
+import random 
+print("Let's play Rock, Paper, Scissors!! ")
+options = [("r", "p", "s")]
+computer_choice = random.choice(options)
+condition = 'yes'
+while condition.lower() == 'yes' : 
+  user_choice = input("Make your choice : (r)ock, (p)aper, (s)cissors.")
+  if user_choice == "r" and computer_choice == "p":
+    print("You picked rock. The computer picked paper.")
+    print("You lose. :((")
+
+  elif (user_choice == "r" and computer_choice == "s") :
+    print("You picked Rock. The computer picked scissors.")
+    print("You won !!")
+
+  elif (user_choice == "r" and computer_choice == "r"):
+    print("You picked rock. The computer picked rock.")
+    print("This round is a draw. :/")
+  
+  elif (user_choice == "p" and computer_choice == "p"):
+    print("You picked paper. The computer picked paper")
+    print("This round is a draw. :/")
+
+  elif (user_choice == "p" and computer_choice == "s"):
+    print("You picked paper. The computer picked scissors.")
+    print("You lose. :((")
+
+  elif (user_choice== "p" and computer_choice== "r"):
+    print("You picked paper. The computer picked rock.")
+    print("You won !! :))")
+
+  elif (user_choice== "s"and computer_choice== "p"):
+    print("You picked scissors. The computer picked paper")
+    print("You won !! :))")
+
+  elif (user_choice == "s" and computer_choice== "s"):
+    print("You picked scissors. The computer picked scissors")
+    print("This round is a draw. :/")
+  
+  elif (user_choice == "s" and computer_choice == "r"):
+    print("You picked scissors. The computer picked rock.")
+    print("You lose. :((")
+
+  else:
+    print("I don't understand that!!")
+    print("please pick from 'r', 'p', 's'.")
+  condition= input('Do you want to play again? Yes or no ')
