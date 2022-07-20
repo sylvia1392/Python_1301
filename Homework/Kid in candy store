@@ -1,0 +1,16 @@
+candy_list = ["Snickers", "Kit Kat", "Sour Patch Kids", "Juicy Fruit", "Swedish Fish", "Skittles", "Hershey Bar", "Starbursts", "M&Ms"]
+
+allowance = 5
+candy_cart = []
+
+for i in range(len(candy_list)):
+    print("[" + str(i) + "] " + candy_list[i])
+
+for _ in range(allowance):
+    user_input= input("Pick your candy. Enter a Number : ")
+    candy_cart.append(candy_list[int(user_input)])
+    print(candy_list[int(user_input)])
+print("You brought home :")
+# print(candy_cart)
+for candy in candy_cart:
+  print(candy)
